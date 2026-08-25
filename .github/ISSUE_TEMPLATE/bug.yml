@@ -1,0 +1,34 @@
+name: Bug report
+description: Report an incorrect transcript diagnostic or repair
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove API keys, prompts, personal data, signatures, and proprietary content from fixtures.
+  - type: input
+    id: version
+    attributes:
+      label: agent-transcript version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Source and target providers
+      placeholder: Google AI Studio to Vertex Gemini
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal sanitized transcript
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual diagnostics
+    validations:
+      required: true

@@ -1,0 +1,24 @@
+name: Conformance rule
+description: Propose a provider-backed transcript invariant
+title: "rule: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: failure
+    attributes:
+      label: Replay failure
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public provider evidence
+      description: Link official documentation, SDK source, or a reproducible public issue.
+    validations:
+      required: true
+  - type: textarea
+    id: invariant
+    attributes:
+      label: Proposed invariant or repair
+    validations:
+      required: true
